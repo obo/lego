@@ -1,7 +1,0 @@
-speed 200
-pencolor "right
-pd
-to star
-  repeat 5 [ fd 38 lt 72 fd 38 rt 144 ]
-end
-star

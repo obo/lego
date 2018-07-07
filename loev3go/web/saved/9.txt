@@ -1,6 +1,0 @@
-speed 200
-pd
-to star
-  repeat 5 [ fd 38 pu fd 24 pd fd 38 rt 144 ]
-end
-star

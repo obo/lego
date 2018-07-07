@@ -410,3 +410,6 @@ _T=20180704_21:48:20_6923	 vim .git/
 _T=20180704_21:48:37_6923	 git push
 _T=20180704_21:48:38_6978	 labelledxychart --data=1,2,0,'',linespoints < ~/clip | gpsandbox
 _T=20180704_21:57:48_6845	 ls
+_T=20180707_16:12:23_6845	 ls
+_T=20180707_16:12:27_6845	 git rm loev3go
+_T=20180707_16:12:30_6845	 git rm -r loev3go

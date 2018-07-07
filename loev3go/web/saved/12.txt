@@ -1,4 +1,0 @@
-penwidth 2
-pencolor "right
-pd
-repeat 5 [repeat 6 [fd 100 lt 72] lt 144]
