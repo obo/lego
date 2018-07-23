@@ -17,7 +17,7 @@ if __name__ == '__main__':
         #if 'HID' in d.name:
         #if not 'EV3' in d.name and not 'Barcode' in d.name:
         #if d.phys == 'usb-ohci-da8xx-1.2/input1':
-        if d.phys == 'usb-ohci-da8xx-1.3/input1':
+        if d.phys == 'usb-ohci-da8xx-1.4/input1':
         #if 'Mouse' in d.name:
             DEVICE = d
             print('Found %s at %s...' % (d.name, d.fn))
