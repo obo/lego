@@ -401,6 +401,45 @@ http://aishack.in/tutorials/scanning-qr-codes-2/
 https://gist.github.com/mohankumargupta/243aeb6787123cc17f1c10338bd4a82f
 ...this seems to be all combined into one script
 
+## Aruco Markers, better than QR codes:
+
+https://www.sciencedirect.com/science/article/pii/S0031320317303151
+...perhaps the best option
+http://www.uco.es/investiga/grupos/ava/node/57
+http://www.uco.es/grupos/ava/node/25
+
+https://docs.opencv.org/3.4.1/d5/dae/tutorial_aruco_detection.html
+
+PnP
+OpenCV has method solvePnP
+
+keywords: slam, simultaneous localization and mapping
+
+https://openslam-org.github.io/
+
+https://arxiv.org/pdf/1610.03660.pdf
+Image Based Camera Localization: an Overview
+Yihong Wu, Fulin Tang, Heping Li
+
+## Installing Aruco:
+
+get from here: https://sourceforge.net/projects/aruco/files/?source=navbar
+
+cd aruco
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/bojar/opt/aruco-3.0.11 ..
+make
+make install
+
+cd markermapper
+mkdir build
+cd build
+export aruco_DIR=/home/bojar/opt/aruco-3.0.11/
+cmake ..
+make
+
+
 ## Simplest white balance:
 
 https://gist.github.com/tomykaira/94472e9f4921ec2cf582
