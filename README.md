@@ -141,6 +141,8 @@ and a similar tutorial in C++:
 https://github.com/FrankBau/raspi-repo-manifest/wiki/OpenCV
 
 
+https://github.com/YuliangXiu/PoseFlow
+... online pose tracking for human body
 
 
 

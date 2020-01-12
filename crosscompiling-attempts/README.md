@@ -18,3 +18,22 @@ arm-linux-gnueabi-gcc hello.c -o hello
 ```
 
 Copy to robot and run. This hello world app worked!
+
+# Cross-Compiling OpenCV and Aruco:
+
+Get opencv sources:
+  https://docs.opencv.org/3.4/d7/d9f/tutorial_linux_install.html
+
+Patch cmake configs to use ``arm-linux-gnueabi-gcc`` and
+``arm-linux-gnueabi-g++``:
+
+Build without GUI support:
+
+```bash
+cd opencv-2.4.13.6
+mkdir build
+cd build
+cmake -DWITH_QT=OFF -DWITH_GTK=OFF ..
+make
+```
+
