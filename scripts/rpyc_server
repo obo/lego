@@ -1,0 +1,4 @@
+#!/bin/bash
+# From: https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/rpyc.html
+#python3 `which rpyc_classic.py`
+rpyc_classic.py
