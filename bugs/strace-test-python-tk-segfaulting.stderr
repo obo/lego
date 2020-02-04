@@ -1,0 +1,1273 @@
+execve("./test_tk_inter.py", ["./test_tk_inter.py"], [/* 32 vars */]) = 0
+brk(NULL)                               = 0x482000
+uname({sysname="Linux", nodename="ev3dev", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6feb000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=110939, ...}) = 0
+mmap2(NULL, 110939, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6fa1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0lh\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1276872, SEEK_SET)             = 1276872
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2880) = 2880
+lseek(3, 1273340, SEEK_SET)             = 1273340
+read(3, "A+\0\0\0aeabi\0\1!\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 44) = 44
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1279752, ...}) = 0
+mmap2(NULL, 1348928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6e57000
+mprotect(0xb6f8b000, 65536, PROT_NONE)  = 0
+mmap2(0xb6f9b000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x134000) = 0xb6f9b000
+mmap2(0xb6f9e000, 9536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f9e000
+close(3)                                = 0
+set_tls(0xb6fec660, 0xb6fecd38, 0xb6fee050, 0xb6fec660, 0xb6fee050) = 0
+mprotect(0xb6f9b000, 8192, PROT_READ)   = 0
+mprotect(0x480000, 4096, PROT_READ)     = 0
+mprotect(0xb6fed000, 4096, PROT_READ)   = 0
+munmap(0xb6fa1000, 110939)              = 0
+brk(NULL)                               = 0x482000
+brk(0x4a3000)                           = 0x4a3000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1679776, ...}) = 0
+mmap2(NULL, 1679776, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6cbc000
+close(3)                                = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1679776, ...}) = 0
+mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0x19a000) = 0xb6fea000
+close(3)                                = 0
+execve("/usr/local/bin/python3", ["python3", "./test_tk_inter.py"], [/* 32 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/python3", ["python3", "./test_tk_inter.py"], [/* 32 vars */]) = 0
+brk(NULL)                               = 0x8d1000
+uname({sysname="Linux", nodename="ev3dev", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f7d000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=110939, ...}) = 0
+mmap2(NULL, 110939, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f33000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\330I\0\0004\0\0\0"..., 512) = 512
+lseek(3, 129692, SEEK_SET)              = 129692
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1560) = 1560
+lseek(3, 94632, SEEK_SET)               = 94632
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0755, st_size=131252, ...}) = 0
+mmap2(NULL, 168528, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6f09000
+mprotect(0xb6f20000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f2f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0xb6f2f000
+mmap2(0xb6f31000, 4688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f31000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0P\t\0\0004\0\0\0"..., 512) = 512
+lseek(3, 8676, SEEK_SET)                = 8676
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 8328, SEEK_SET)                = 8328
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=9796, ...}) = 0
+mmap2(NULL, 73912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6ef6000
+mprotect(0xb6ef8000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f07000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xb6f07000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0 \n\0\0004\0\0\0"..., 512) = 512
+lseek(3, 8712, SEEK_SET)                = 8712
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 8364, SEEK_SET)                = 8364
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=9832, ...}) = 0
+mmap2(NULL, 73904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6ee3000
+mprotect(0xb6ee5000, 61440, PROT_NONE)  = 0
+mmap2(0xb6ef4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xb6ef4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\260!\0\0004\0\0\0"..., 512) = 512
+lseek(3, 135640, SEEK_SET)              = 135640
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 135288, SEEK_SET)              = 135288
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=136760, ...}) = 0
+mmap2(NULL, 200828, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6eb1000
+mprotect(0xb6ed1000, 61440, PROT_NONE)  = 0
+mmap2(0xb6ee0000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0xb6ee0000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0l\30\0\0004\0\0\0"..., 512) = 512
+lseek(3, 90760, SEEK_SET)               = 90760
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 90404, SEEK_SET)               = 90404
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=91880, ...}) = 0
+mmap2(NULL, 155944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6e8a000
+mprotect(0xb6ea0000, 61440, PROT_NONE)  = 0
+mmap2(0xb6eaf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0xb6eaf000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\300=\0\0004\0\0\0"..., 512) = 512
+lseek(3, 692692, SEEK_SET)              = 692692
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 692344, SEEK_SET)              = 692344
+read(3, "A+\0\0\0aeabi\0\1!\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 44) = 44
+fstat64(3, {st_mode=S_IFREG|0644, st_size=693812, ...}) = 0
+mmap2(NULL, 757888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6dd0000
+mprotect(0xb6e79000, 61440, PROT_NONE)  = 0
+mmap2(0xb6e88000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa8000) = 0xb6e88000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0lh\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1276872, SEEK_SET)             = 1276872
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2880) = 2880
+lseek(3, 1273340, SEEK_SET)             = 1273340
+read(3, "A+\0\0\0aeabi\0\1!\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 44) = 44
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1279752, ...}) = 0
+mmap2(NULL, 1348928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6c86000
+mprotect(0xb6dba000, 65536, PROT_NONE)  = 0
+mmap2(0xb6dca000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x134000) = 0xb6dca000
+mmap2(0xb6dcd000, 9536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6dcd000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\260\323\0\0004\0\0\0"..., 512) = 512
+lseek(3, 127688, SEEK_SET)              = 127688
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 127344, SEEK_SET)              = 127344
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=128768, ...}) = 0
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f7b000
+mmap2(NULL, 192936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6c56000
+mprotect(0xb6c75000, 61440, PROT_NONE)  = 0
+mmap2(0xb6c84000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0xb6c84000
+close(3)                                = 0
+set_tls(0xb6f7c150, 0xb6f7c828, 0xb6f80050, 0xb6f7c150, 0xb6f80050) = 0
+mprotect(0xb6dca000, 8192, PROT_READ)   = 0
+mprotect(0xb6c84000, 4096, PROT_READ)   = 0
+mprotect(0xb6e88000, 4096, PROT_READ)   = 0
+mprotect(0xb6eaf000, 4096, PROT_READ)   = 0
+mprotect(0xb6ee0000, 8192, PROT_READ)   = 0
+mprotect(0xb6ef4000, 4096, PROT_READ)   = 0
+mprotect(0xb6f07000, 4096, PROT_READ)   = 0
+mprotect(0xb6f2f000, 4096, PROT_READ)   = 0
+mprotect(0x83c000, 4096, PROT_READ)     = 0
+mprotect(0xb6f7f000, 4096, PROT_READ)   = 0
+munmap(0xb6f33000, 110939)              = 0
+set_tid_address(0xb6f7bcf8)             = 1061
+set_robust_list(0xb6f7bd00, 12)         = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0xb6f0d2b4, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0xb6cb32f0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0xb6f0d39c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6cb32f0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+ugetrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+brk(NULL)                               = 0x8d1000
+brk(0x8f2000)                           = 0x8f2000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1679776, ...}) = 0
+mmap2(NULL, 1679776, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6abb000
+close(3)                                = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1679776, ...}) = 0
+mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0x19a000) = 0xb6f7a000
+close(3)                                = 0
+open("/usr/lib/arm-linux-gnueabi/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=26260, ...}) = 0
+mmap2(NULL, 26260, PROT_READ, MAP_SHARED, 3, 0) = 0xb6f73000
+close(3)                                = 0
+futex(0xb6dcced8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("\300\32$^*C{d\240\244,E\1777\347\6\322\17\237\236\361\362\375]", 24, GRND_NONBLOCK) = 24
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a7b000
+fstat64(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+stat64("/usr/local/bin/python3", 0xbeefb1a0) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/python3", {st_mode=S_IFREG|0755, st_size=4140052, ...}) = 0
+readlink("/usr/bin/python3", "python3.5", 4096) = 9
+readlink("/usr/bin/python3.5", 0xbeefa13c, 4096) = -1 EINVAL (Invalid argument)
+open("/usr/bin/pyvenv.cfg", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+open("/usr/pyvenv.cfg", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/Modules/Setup", 0xbeefb1a0) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/lib/python3.5/os.py", 0xbeefb0e0) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/lib/python3.5/os.pyc", 0xbeefb0e0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=36950, ...}) = 0
+stat64("/usr/bin/pybuilddir.txt", 0xbeefb1a0) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/lib/python3.5/lib-dynload", 0xbeefb1a0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+clock_gettime(CLOCK_REALTIME, {tv_sec=1580801142, tv_nsec=942800347}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=677, tv_nsec=712382608}) = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a3b000
+brk(0x913000)                           = 0x913000
+sysinfo({uptime=679, loads=[29952, 59648, 54528], totalram=58552320, freeram=1490944, sharedram=143360, bufferram=3674112, totalswap=100659200, freeswap=97775616, procs=74, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69fb000
+munmap(0xb69fb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69fb000
+munmap(0xb69fb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69fb000
+sigaltstack({ss_sp=0x904710, ss_flags=0, ss_size=8192}, NULL) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/home/robot/lego/loev3go", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 17 entries */, 32768)  = 544
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/home/robot/lego/loev3go/tests", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 10 entries */, 32768)  = 344
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python35.zip", 0xbef0c6a8) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python35.zip", 0xbef0c200) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 204 entries */, 32768) = 6784
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/encodings/__init__.cpython-35m-arm-linux-gnueabi.so", 0xbef0c430) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/encodings/__init__.abi3.so", 0xbef0c430) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/encodings/__init__.so", 0xbef0c430) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+open("/usr/lib/python3.5/encodings/__pycache__/__init__.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl64(3, F_GETFD)                     = 0x1 (flags FD_CLOEXEC)
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3834, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3834, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\313\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3835) = 3834
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/codecs.py", {st_mode=S_IFREG|0644, st_size=36231, ...}) = 0
+stat64("/usr/lib/python3.5/codecs.py", {st_mode=S_IFREG|0644, st_size=36231, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/codecs.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=35288, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=35288, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\207\215\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0:\0\0\0@\0\0"..., 35289) = 35288
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x939000)                           = 0x939000
+stat64("/usr/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5/encodings", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 127 entries */, 32768) = 4304
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15542, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15542, ...}) = 0
+open("/usr/lib/python3.5/encodings/__pycache__/aliases.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=7550, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=7550, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\266<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\204\2\0\0@\0\0"..., 7551) = 7550
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+open("/usr/lib/python3.5/encodings/__pycache__/utf_8.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1694, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1694, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1695) = 1694
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getpid()                                = 1061
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x71d894, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+stat64("/usr/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+stat64("/usr/lib/python3.5/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+open("/usr/lib/python3.5/encodings/__pycache__/latin_1.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=2006, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=2006, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 2007) = 2006
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/io.py", {st_mode=S_IFREG|0644, st_size=3396, ...}) = 0
+stat64("/usr/lib/python3.5/io.py", {st_mode=S_IFREG|0644, st_size=3396, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/io.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3443, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3443, ...}) = 0
+read(3, "\27\r\r\n\370\310\200XD\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 3444) = 3443
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/abc.py", {st_mode=S_IFREG|0644, st_size=8628, ...}) = 0
+stat64("/usr/lib/python3.5/abc.py", {st_mode=S_IFREG|0644, st_size=8628, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/abc.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=7850, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=7850, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\264!\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7851) = 7850
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+stat64("/usr/lib/python3.5/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/_weakrefset.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=8406, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=8406, ...}) = 0
+read(3, "\27\r\r\n\370\310\200XI\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 8407) = 8406
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat64(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+_llseek(0, 0, 0xbef0cff8, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+_llseek(0, 0, 0xbef0d048, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+dup(1)                                  = 3
+close(3)                                = 0
+fstat64(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+ioctl(1, TCGETS, 0xbef0d034)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(1, 0, 0xbef0cfd0, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+ioctl(1, TCGETS, 0xbef0d164)            = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(1, TCGETS, 0xbef0d10c)            = -1 ENOTTY (Inappropriate ioctl for device)
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+stat64("/usr/lib/python3.5/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/_bootlocale.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1029, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1029, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\25\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 1030) = 1029
+read(3, "", 1)                          = 0
+close(3)                                = 0
+_llseek(1, 0, 0xbef0d048, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+dup(2)                                  = 3
+close(3)                                = 0
+fstat64(2, {st_mode=S_IFREG|0644, st_size=31564, ...}) = 0
+ioctl(2, TCGETS, 0xbef0d034)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(2, 0, [31711], SEEK_CUR)        = 0
+ioctl(2, TCGETS, 0xbef0d164)            = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0xbef0d10c)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(2, 0, [31925], SEEK_CUR)        = 0
+_llseek(2, 0, [31969], SEEK_CUR)        = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/site.py", {st_mode=S_IFREG|0644, st_size=22258, ...}) = 0
+stat64("/usr/lib/python3.5/site.py", {st_mode=S_IFREG|0644, st_size=22258, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/site.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=18106, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=18106, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\362V\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 18107) = 18106
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=36950, ...}) = 0
+stat64("/usr/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=36950, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/os.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=31252, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=31252, ...}) = 0
+read(3, "\27\r\r\n\370\310\200XV\220\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0@\0\0"..., 31253) = 31252
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+stat64("/usr/lib/python3.5/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/stat.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=4147, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=4147, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\256\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 4148) = 4147
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/posixpath.py", {st_mode=S_IFREG|0644, st_size=14911, ...}) = 0
+stat64("/usr/lib/python3.5/posixpath.py", {st_mode=S_IFREG|0644, st_size=14911, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/posixpath.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=11139, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=11139, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X?:\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0\0@\0\0"..., 11140) = 11139
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+munmap(0xb69bb000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb69bb000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/genericpath.py", {st_mode=S_IFREG|0644, st_size=4364, ...}) = 0
+stat64("/usr/lib/python3.5/genericpath.py", {st_mode=S_IFREG|0644, st_size=4364, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/genericpath.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3917, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3917, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\f\21\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3918) = 3917
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=24794, ...}) = 0
+stat64("/usr/lib/python3.5/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=24794, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/_collections_abc.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=29801, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=29801, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\332`\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\26\0\0\0@\0\0"..., 29802) = 29801
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x95d000)                           = 0x95d000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3115, ...}) = 0
+stat64("/usr/lib/python3.5/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3115, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/_sitebuiltins.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3654, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=3654, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X+\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3655) = 3654
+read(3, "", 1)                          = 0
+close(3)                                = 0
+getcwd("/home/robot/lego/loev3go/tests", 1024) = 31
+stat64("/usr/bin/pyvenv.cfg", 0xbef0c358) = -1 ENOENT (No such file or directory)
+stat64("/usr/pyvenv.cfg", 0xbef0c358)   = -1 ENOENT (No such file or directory)
+geteuid32()                             = 1000
+getuid32()                              = 1000
+getegid32()                             = 1000
+getgid32()                              = 1000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/sysconfig.py", {st_mode=S_IFREG|0644, st_size=24650, ...}) = 0
+stat64("/usr/lib/python3.5/sysconfig.py", {st_mode=S_IFREG|0644, st_size=24650, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/sysconfig.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=17020, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=17020, ...}) = 0
+read(3, "\27\r\r\n\370\310\200XJ`\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 17021) = 17020
+read(3, "", 1)                          = 0
+close(3)                                = 0
+lstat64("/usr", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat64("/usr/bin", {st_mode=S_IFDIR|0775, st_size=36864, ...}) = 0
+lstat64("/usr/bin/python3", {st_mode=S_IFLNK|0777, st_size=9, ...}) = 0
+readlink("/usr/bin/python3", "python3.5", 4096) = 9
+lstat64("/usr/bin/python3.5", {st_mode=S_IFREG|0755, st_size=4140052, ...}) = 0
+stat64("/usr/bin/Modules/Setup.dist", 0xbef0b620) = -1 ENOENT (No such file or directory)
+stat64("/usr/bin/Modules/Setup.local", 0xbef0b620) = -1 ENOENT (No such file or directory)
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/_sysconfigdata.py", {st_mode=S_IFREG|0644, st_size=126, ...}) = 0
+stat64("/usr/lib/python3.5/_sysconfigdata.py", {st_mode=S_IFREG|0644, st_size=126, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/_sysconfigdata.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=251, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=251, ...}) = 0
+read(3, "\27\r\r\n\f\233\220R~\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 252) = 251
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5/plat-arm-linux-gnueabi", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 8 entries */, 32768)   = 248
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi/_sysconfigdata_m.py", {st_mode=S_IFREG|0644, st_size=22338, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi/_sysconfigdata_m.py", {st_mode=S_IFREG|0644, st_size=22338, ...}) = 0
+open("/usr/lib/python3.5/plat-arm-linux-gnueabi/__pycache__/_sysconfigdata_m.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=21646, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=21646, ...}) = 0
+read(3, "\27\r\r\n\370\310\200XBW\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\n\5\0\0@\0\0"..., 21647) = 21646
+read(3, "", 1)                          = 0
+close(3)                                = 0
+lstat64("/usr", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat64("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat64("/usr/lib/python3.5/config-3.5m-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/.local/lib/python3.5/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+open("/home/robot/.local/lib/python3.5/site-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+getdents64(3, /* 7 entries */, 32768)   = 224
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/local/lib/python3.5/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+open("/usr/local/lib/python3.5/dist-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 64 entries */, 32768)  = 2576
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+open("/usr/lib/python3/dist-packages/keyrings.alt-1.3-nspkg.pth", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=361, ...}) = 0
+ioctl(3, TCGETS, 0xbef0c1dc)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+ioctl(3, TCGETS, 0xbef0c194)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+read(3, "import sys, types, os;pep420 = s"..., 8192) = 361
+brk(0x97e000)                           = 0x97e000
+brk(0x979000)                           = 0x979000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/types.py", {st_mode=S_IFREG|0644, st_size=8799, ...}) = 0
+stat64("/usr/lib/python3.5/types.py", {st_mode=S_IFREG|0644, st_size=8799, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/types.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=8725, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=8725, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X_\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 8726) = 8725
+read(4, "", 1)                          = 0
+close(4)                                = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb697b000
+munmap(0xb697b000, 262144)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb697b000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/functools.py", {st_mode=S_IFREG|0644, st_size=28944, ...}) = 0
+stat64("/usr/lib/python3.5/functools.py", {st_mode=S_IFREG|0644, st_size=28944, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/functools.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=23569, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=23569, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\20q\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0+\0\0\0@\0\0"..., 23570) = 23569
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/collections/__init__.cpython-35m-arm-linux-gnueabi.so", 0xbef09fa0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/collections/__init__.abi3.so", 0xbef09fa0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/collections/__init__.so", 0xbef09fa0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45757, ...}) = 0
+stat64("/usr/lib/python3.5/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45757, ...}) = 0
+open("/usr/lib/python3.5/collections/__pycache__/__init__.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=48692, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=48692, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\275\262\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0$\0\0\0@\0\0"..., 48693) = 48692
+read(4, "", 1)                          = 0
+close(4)                                = 0
+brk(0x99e000)                           = 0x99e000
+brk(0x986000)                           = 0x986000
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+stat64("/usr/lib/python3.5/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/operator.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=14774, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=14774, ...}) = 0
+read(4, "\27\r\r\n\370\310\200Xo*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0006\0\0\0@\0\0"..., 14775) = 14774
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+stat64("/usr/lib/python3.5/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/keyword.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=1925, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=1925, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\241\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0!\0\0\0@\0\0"..., 1926) = 1925
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+stat64("/usr/lib/python3.5/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/heapq.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=15027, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=15027, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\221Y\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 15028) = 15027
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+stat64("/usr/lib/python3.5/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/reprlib.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=5944, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=5944, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\330\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 5945) = 5944
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/weakref.py", {st_mode=S_IFREG|0644, st_size=20433, ...}) = 0
+stat64("/usr/lib/python3.5/weakref.py", {st_mode=S_IFREG|0644, st_size=20433, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/weakref.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=20631, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=20631, ...}) = 0
+read(4, "\27\r\r\n\370\310\200X\321O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 20632) = 20631
+read(4, "", 1)                          = 0
+close(4)                                = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb693b000
+stat64("/usr/lib/python3.5/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5/collections", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, /* 6 entries */, 32768)   = 176
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+stat64("/usr/lib/python3.5/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+stat64("/usr/lib/python3.5/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+open("/usr/lib/python3.5/collections/__pycache__/abc.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=189, ...}) = 0
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+fstat64(4, {st_mode=S_IFREG|0644, st_size=189, ...}) = 0
+read(4, "\27\r\r\n\370\310\200XD\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 190) = 189
+read(4, "", 1)                          = 0
+close(4)                                = 0
+stat64("/usr/lib/python3/dist-packages/keyrings/__init__.py", 0xbef0bfb0) = -1 ENOENT (No such file or directory)
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/dist-packages", 0xbef0c470) = -1 ENOENT (No such file or directory)
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+stat64("/usr/lib/python3.5/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/sitecustomize.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=217, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=217, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 218) = 217
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5/lib-dynload", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 42 entries */, 32768)  = 2656
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/home/robot/.local/lib/python3.5/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat64("/home/robot/.local/lib/python3.5/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat64("/home/robot/.local/lib/python3.5/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+open("/home/robot/.local/lib/python3.5/site-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+getdents64(3, /* 7 entries */, 32768)   = 224
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/local/lib/python3.5/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat64("/usr/local/lib/python3.5/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat64("/usr/local/lib/python3.5/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+open("/usr/local/lib/python3.5/dist-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 64 entries */, 32768)  = 2576
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/.local/lib/python3.5/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat64("/usr/local/lib/python3.5/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+readlink("./test_tk_inter.py", 0xbeefc2c4, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/robot/lego/loev3go/tests", 4096) = 31
+lstat64("/home/robot/lego/loev3go/tests/test_tk_inter.py", {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+stat64("./test_tk_inter.py", {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+open("./test_tk_inter.py", O_RDONLY|O_LARGEFILE) = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat64(3, {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+fstat64(3, {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+_llseek(3, 0, [0], SEEK_SET)            = 0
+read(3, "#!/usr/bin/env python3\n# this is"..., 399) = 399
+read(3, "root)\nroot.mainloop()\n", 4096) = 22
+close(3)                                = 0
+stat64("./test_tk_inter.py", {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+open("./test_tk_inter.py", O_RDONLY|O_LARGEFILE) = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat64(3, {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+ioctl(3, TCGETS, 0xbef0d27c)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0755, st_size=421, ...}) = 0
+read(3, "#!/usr/bin/env python3\n# this is"..., 4096) = 421
+_llseek(3, 0, [0], SEEK_SET)            = 0
+read(3, "#!/usr/bin/env python3\n# this is"..., 4096) = 421
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/tkinter/__init__.cpython-35m-arm-linux-gnueabi.so", 0xbef0c2d0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/tkinter/__init__.abi3.so", 0xbef0c2d0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/tkinter/__init__.so", 0xbef0c2d0) = -1 ENOENT (No such file or directory)
+stat64("/usr/lib/python3.5/tkinter/__init__.py", {st_mode=S_IFREG|0644, st_size=162593, ...}) = 0
+stat64("/usr/lib/python3.5/tkinter/__init__.py", {st_mode=S_IFREG|0644, st_size=162593, ...}) = 0
+open("/usr/lib/python3.5/tkinter/__pycache__/__init__.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=184498, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=184498, ...}) = 0
+mmap2(NULL, 188416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb690d000
+read(3, "\27\r\r\n\370\310\200X!{\2\0\343\0\0\0\0\0\0\0\0\0\0\0\0%\0\0\0@\0\0"..., 184499) = 184498
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap2(NULL, 188416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb68df000
+munmap(0xb690d000, 188416)              = 0
+munmap(0xb68df000, 188416)              = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/plat-arm-linux-gnueabi", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/lib-dynload/_tkinter.cpython-35m-arm-linux-gnueabi.so", {st_mode=S_IFREG|0644, st_size=49744, ...}) = 0
+futex(0xb6f080ac, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/usr/lib/python3.5/lib-dynload/_tkinter.cpython-35m-arm-linux-gnueabi.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0@/\0\0004\0\0\0"..., 512) = 512
+lseek(3, 48744, SEEK_SET)               = 48744
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+lseek(3, 48428, SEEK_SET)               = 48428
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=49744, ...}) = 0
+mmap2(NULL, 114036, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6f33000
+mprotect(0xb6f3e000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f4d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0xb6f4d000
+close(3)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=110939, ...}) = 0
+mmap2(NULL, 110939, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb691f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/libBLT.2.5.so.8.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0000\16\2\0004\0\0\0"..., 512) = 512
+lseek(3, 1187792, SEEK_SET)             = 1187792
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+lseek(3, 1187528, SEEK_SET)             = 1187528
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1188792, ...}) = 0
+mmap2(NULL, 1256204, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb67ec000
+mprotect(0xb68fa000, 65536, PROT_NONE)  = 0
+mmap2(0xb690a000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10e000) = 0xb690a000
+mmap2(0xb691e000, 2828, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb691e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libtk8.6.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0Pk\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1228104, SEEK_SET)             = 1228104
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 1227772, SEEK_SET)             = 1227772
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1229144, ...}) = 0
+mmap2(NULL, 1294324, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb66b0000
+mprotect(0xb67cc000, 65536, PROT_NONE)  = 0
+mmap2(0xb67dc000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11c000) = 0xb67dc000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libtcl8.6.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\260i\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1548968, SEEK_SET)             = 1548968
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 1548624, SEEK_SET)             = 1548624
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1550048, ...}) = 0
+mmap2(NULL, 1616520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6525000
+mprotect(0xb6697000, 61440, PROT_NONE)  = 0
+mmap2(0xb66a6000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x171000) = 0xb66a6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libX11.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0@:\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1152732, SEEK_SET)             = 1152732
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 1152404, SEEK_SET)             = 1152404
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1153772, ...}) = 0
+mmap2(NULL, 1219076, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb63fb000
+mprotect(0xb6511000, 65536, PROT_NONE)  = 0
+mmap2(0xb6521000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x116000) = 0xb6521000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\320.\0\0004\0\0\0"..., 512) = 512
+lseek(3, 70480, SEEK_SET)               = 70480
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 70132, SEEK_SET)               = 70132
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=71600, ...}) = 0
+mmap2(NULL, 145148, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb63d7000
+mprotect(0xb63e8000, 61440, PROT_NONE)  = 0
+mmap2(0xb63f7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0xb63f7000
+mmap2(0xb63f9000, 5884, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb63f9000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXft.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\320-\0\0004\0\0\0"..., 512) = 512
+lseek(3, 74852, SEEK_SET)               = 74852
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 74524, SEEK_SET)               = 74524
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=75892, ...}) = 0
+mmap2(NULL, 140116, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb63b4000
+mprotect(0xb63c6000, 61440, PROT_NONE)  = 0
+mmap2(0xb63d5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0xb63d5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libfontconfig.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\300G\0\0004\0\0\0"..., 512) = 512
+lseek(3, 217980, SEEK_SET)              = 217980
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 217652, SEEK_SET)              = 217652
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=219020, ...}) = 0
+mmap2(NULL, 283596, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb636e000
+mprotect(0xb63a2000, 65536, PROT_NONE)  = 0
+mmap2(0xb63b2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x34000) = 0xb63b2000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libfreetype.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\34\231\0\0004\0\0\0"..., 512) = 512
+lseek(3, 574988, SEEK_SET)              = 574988
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 574660, SEEK_SET)              = 574660
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=576028, ...}) = 0
+mmap2(NULL, 640200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb62d1000
+mprotect(0xb635a000, 61440, PROT_NONE)  = 0
+mmap2(0xb6369000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x88000) = 0xb6369000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXss.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0x\n\0\0004\0\0\0"..., 512) = 512
+lseek(3, 6496, SEEK_SET)                = 6496
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 6208, SEEK_SET)                = 6208
+read(3, "A+\0\0\0aeabi\0\1!\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 44) = 44
+fstat64(3, {st_mode=S_IFREG|0644, st_size=7536, ...}) = 0
+mmap2(NULL, 38992, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb62c7000
+mprotect(0xb62c9000, 28672, PROT_NONE)  = 0
+mmap2(0xb62d0000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xb62d0000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXext.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0|(\0\0004\0\0\0"..., 512) = 512
+lseek(3, 58540, SEEK_SET)               = 58540
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 58240, SEEK_SET)               = 58240
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=59580, ...}) = 0
+mmap2(NULL, 124060, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb62a8000
+mprotect(0xb62b6000, 61440, PROT_NONE)  = 0
+mmap2(0xb62c5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0xb62c5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libxcb.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0008\232\0\0004\0\0\0"..., 512) = 512
+lseek(3, 127840, SEEK_SET)              = 127840
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 127512, SEEK_SET)              = 127512
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=128880, ...}) = 0
+mmap2(NULL, 193116, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6278000
+mprotect(0xb6296000, 65536, PROT_NONE)  = 0
+mmap2(0xb62a6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0xb62a6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXrender.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\234\24\0\0004\0\0\0"..., 512) = 512
+lseek(3, 37584, SEEK_SET)               = 37584
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+lseek(3, 37267, SEEK_SET)               = 37267
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=38584, ...}) = 0
+mmap2(NULL, 102824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb625e000
+mprotect(0xb6267000, 61440, PROT_NONE)  = 0
+mmap2(0xb6276000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0xb6276000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libpng16.so.16", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\270?\0\0004\0\0\0"..., 512) = 512
+lseek(3, 176460, SEEK_SET)              = 176460
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 176132, SEEK_SET)              = 176132
+read(3, "A%\0\0\0aeabi\0\1\33\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 38) = 38
+fstat64(3, {st_mode=S_IFREG|0644, st_size=177500, ...}) = 0
+mmap2(NULL, 241672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6222000
+mprotect(0xb624c000, 65536, PROT_NONE)  = 0
+mmap2(0xb625c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0xb625c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXau.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0|\v\0\0004\0\0\0"..., 512) = 512
+lseek(3, 8636, SEEK_SET)                = 8636
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 8348, SEEK_SET)                = 8348
+read(3, "A+\0\0\0aeabi\0\1!\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 44) = 44
+fstat64(3, {st_mode=S_IFREG|0644, st_size=9676, ...}) = 0
+mmap2(NULL, 41132, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6217000
+mprotect(0xb6219000, 28672, PROT_NONE)  = 0
+mmap2(0xb6220000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xb6220000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabi/libXdmcp.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\4\17\0\0004\0\0\0"..., 512) = 512
+lseek(3, 16848, SEEK_SET)               = 16848
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+lseek(3, 16532, SEEK_SET)               = 16532
+read(3, "A'\0\0\0aeabi\0\1\35\0\0\0\0054T\0\6\2\10\1\t\1\22\4\24\1\25\1"..., 40) = 40
+fstat64(3, {st_mode=S_IFREG|0644, st_size=17848, ...}) = 0
+mmap2(NULL, 82072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6202000
+mprotect(0xb6206000, 61440, PROT_NONE)  = 0
+mmap2(0xb6215000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0xb6215000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libbsd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0p&\0\0004\0\0\0"..., 512) = 512
+lseek(3, 103020, SEEK_SET)              = 103020
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 102656, SEEK_SET)              = 102656
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=104140, ...}) = 0
+mmap2(NULL, 171136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb61d8000
+mprotect(0xb61f1000, 61440, PROT_NONE)  = 0
+mmap2(0xb6200000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0xb6200000
+close(3)                                = 0
+mprotect(0xb6200000, 4096, PROT_READ)   = 0
+mprotect(0xb6215000, 4096, PROT_READ)   = 0
+mprotect(0xb6220000, 4096, PROT_READ)   = 0
+mprotect(0xb625c000, 4096, PROT_READ)   = 0
+mprotect(0xb62a6000, 4096, PROT_READ)   = 0
+mprotect(0xb6521000, 4096, PROT_READ)   = 0
+mprotect(0xb6276000, 4096, PROT_READ)   = 0
+mprotect(0xb62c5000, 4096, PROT_READ)   = 0
+mprotect(0xb6369000, 16384, PROT_READ)  = 0
+mprotect(0xb63b2000, 4096, PROT_READ)   = 0
+mprotect(0xb63d5000, 4096, PROT_READ)   = 0
+mprotect(0xb63f7000, 4096, PROT_READ)   = 0
+mprotect(0xb66a6000, 32768, PROT_READ)  = 0
+mprotect(0xb67dc000, 45056, PROT_READ)  = 0
+mprotect(0xb690a000, 4096, PROT_READ)   = 0
+mprotect(0xb6f4d000, 4096, PROT_READ)   = 0
+munmap(0xb691f000, 110939)              = 0
+mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6198000
+_llseek(0, 0, 0xbef0bd08, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+_llseek(1, 0, 0xbef0bd08, SEEK_CUR)     = -1 ESPIPE (Illegal seek)
+_llseek(2, 0, [79049], SEEK_CUR)        = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0xb6cb32e0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xb6cb32e0}, 8) = 0
+access("/usr/local/bin/python3", X_OK)  = -1 ENOENT (No such file or directory)
+access("/usr/bin/python3", X_OK)        = 0
+stat64("/usr/bin/python3", {st_mode=S_IFREG|0755, st_size=4140052, ...}) = 0
+brk(0x9a9000)                           = 0x9a9000
+stat64("/usr/lib/python3.5/tkinter", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/tkinter", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/tkinter", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/python3.5/tkinter", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, /* 17 entries */, 32768)  = 576
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+stat64("/usr/lib/python3.5/tkinter/constants.py", {st_mode=S_IFREG|0644, st_size=1493, ...}) = 0
+stat64("/usr/lib/python3.5/tkinter/constants.py", {st_mode=S_IFREG|0644, st_size=1493, ...}) = 0
+open("/usr/lib/python3.5/tkinter/__pycache__/constants.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1792, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1792, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\325\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 1793) = 1792
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/re.py", {st_mode=S_IFREG|0644, st_size=15501, ...}) = 0
+stat64("/usr/lib/python3.5/re.py", {st_mode=S_IFREG|0644, st_size=15501, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/re.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=14437, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=14437, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\215<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 14438) = 14437
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/sre_compile.py", {st_mode=S_IFREG|0644, st_size=18410, ...}) = 0
+stat64("/usr/lib/python3.5/sre_compile.py", {st_mode=S_IFREG|0644, st_size=18410, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/sre_compile.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=10905, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=10905, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\352G\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 10906) = 10905
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/sre_parse.py", {st_mode=S_IFREG|0644, st_size=34964, ...}) = 0
+stat64("/usr/lib/python3.5/sre_parse.py", {st_mode=S_IFREG|0644, st_size=34964, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/sre_parse.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=22320, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=22320, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\224\210\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\25\0\0\0@\0\0"..., 22321) = 22320
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6448, ...}) = 0
+stat64("/usr/lib/python3.5/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6448, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/sre_constants.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=5926, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=5926, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X0\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 5927) = 5926
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/home/robot/lego/loev3go/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64("/usr/lib/python3.5/copyreg.py", {st_mode=S_IFREG|0644, st_size=6833, ...}) = 0
+stat64("/usr/lib/python3.5/copyreg.py", {st_mode=S_IFREG|0644, st_size=6833, ...}) = 0
+open("/usr/lib/python3.5/__pycache__/copyreg.cpython-35.pyc", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=4537, ...}) = 0
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=4537, ...}) = 0
+read(3, "\27\r\r\n\370\310\200X\261\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 4538) = 4537
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x9cd000)                           = 0x9cd000
+uname({sysname="Linux", nodename="ev3dev", ...}) = 0
+getuid32()                              = 1000
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=566, ...}) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 566
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=110939, ...}) = 0
+mmap2(NULL, 110939, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb691f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\200\r\0\0004\0\0\0"..., 512) = 512
+lseek(3, 25332, SEEK_SET)               = 25332
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 24984, SEEK_SET)               = 24984
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=26452, ...}) = 0
+mmap2(NULL, 90716, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6181000
+mprotect(0xb6187000, 61440, PROT_NONE)  = 0
+mmap2(0xb6196000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0xb6196000
+close(3)                                = 0
+mprotect(0xb6196000, 4096, PROT_READ)   = 0
+munmap(0xb691f000, 110939)              = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=110939, ...}) = 0
+mmap2(NULL, 110939, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb691f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0p\30\0\0004\0\0\0"..., 512) = 512
+lseek(3, 41560, SEEK_SET)               = 41560
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 41212, SEEK_SET)               = 41212
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=42680, ...}) = 0
+mmap2(NULL, 107108, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6166000
+mprotect(0xb616f000, 65536, PROT_NONE)  = 0
+mmap2(0xb617f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0xb617f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabi/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\240\31\0\0004\0\0\0"..., 512) = 512
+lseek(3, 37436, SEEK_SET)               = 37436
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 37088, SEEK_SET)               = 37088
+read(3, "A)\0\0\0aeabi\0\1\37\0\0\0\0054T\0\6\2\10\1\t\1\22\4\23\1\24\1"..., 42) = 42
+fstat64(3, {st_mode=S_IFREG|0644, st_size=38556, ...}) = 0
+mmap2(NULL, 127744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb6146000
+mprotect(0xb614f000, 61440, PROT_NONE)  = 0
+mmap2(0xb615e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0xb615e000
+mmap2(0xb6160000, 21248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6160000
+close(3)                                = 0
+mprotect(0xb615e000, 4096, PROT_READ)   = 0
+mprotect(0xb617f000, 4096, PROT_READ)   = 0
+munmap(0xb691f000, 110939)              = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+_llseek(3, 0, [0], SEEK_CUR)            = 0
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1585, ...}) = 0
+mmap2(NULL, 1585, PROT_READ, MAP_SHARED, 3, 0) = 0xb6f72000
+_llseek(3, 1585, [1585], SEEK_SET)      = 0
+munmap(0xb6f72000, 1585)                = 0
+close(3)                                = 0
+write(2, "invalid command name \"::oo::debi"..., 35invalid command name "::oo::debine") = 35
+write(2, "\n", 1
+)                       = 1
+rt_sigprocmask(SIG_UNBLOCK, [ABRT], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+getpid()                                = 1061
+gettid()                                = 1061
+tgkill(1061, 1061, SIGABRT)             = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGABRT {si_signo=SIGABRT, si_code=SI_TKILL, si_pid=1061, si_uid=1000} ---
++++ killed by SIGABRT +++

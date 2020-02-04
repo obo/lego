@@ -1,3 +1,40 @@
+# S3PARATOR
+
+...an idea to create LEGO brick separator from EV3 home edition.
+
+# Current Best Proposed Design
+
+## Hardware
+
+- Motor 1:
+  - one belt to load stage
+  - one belt to return failed bricks
+- Motor 2 & 3:
+  - Follow https://www.ev3dev.org/projects/2015/05/06/EV3-Print3rbot/
+    to build a moving box around the current element.
+  - Still problematic because of the missing touch sensor.
+    - Would need to calibrate via vision
+  - Another problem could be the small range of movements (and the need to push the moving box very far)
+    - So perhaps a better solution would be to simply *sink* the platform, dropping the brick into one of 8 directions
+      - Sinking has the further advantage of an easy 'tare' of the scale
+- cell phone with 2 cams
+- Digital scale
+
+## Software
+
+- RPyC ev3dev to operate the motors
+- IP Webcam to scan the scene in video and then take pictures
+- TF to recognize bricks and weight digits
+
+## Operation
+
+- Cell phone watches the belt with peripheral vision
+- Slow down if any object apparent
+- Drop object on scale, into the movable frame
+- Take 2 pictures and read scale
+- Predict object, decide on target direction
+- Use the movable frame to shovel the object there
+
 # Random Ideas on Lego Brick Recognition
 
 ## Links
@@ -94,3 +131,7 @@ https://github.com/eliasdorneles/tictactoe-voc
 ...sample tic-tac-toe app
 
 
+# RPyC
+
+https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/rpyc.html
+...run everything on laptop, remote-control the robot

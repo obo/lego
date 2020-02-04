@@ -955,3 +955,278 @@ D:  device /dev/input/event1, name "EV3 Brick Buttons", phys "gpio-keys/input0"
 Device:  LEGO MINDSTORMS EV3 Speaker
 D:  device /dev/input/event0, name "LEGO MINDSTORMS EV3 Speaker", phys ""
 
+
+
+## Which old sets I used to have:
+
+6932 Futuron
+6750  Sonic Robot
+
+6780 ... possibly, but quite unsure
+https://brickset.com/sets/6783-1 ...rather not
+
+## Slowness:
+
+https://github.com/ev3dev/ev3dev/issues/1199
+...IR sensor contact?
+...IR sensor in wrong port?
+
+## Strange random segfaults
+
+
+00:16 obonb ~$ssh robot@robot
+Linux ev3dev 4.14.38-ev3dev-2.0.1-ev3 #1 PREEMPT Sat May 5 13:15:45 CDT 2018 armv5tejl
+             _____     _
+   _____   _|___ /  __| | _____   __
+  / _ \ \ / / |_ \ / _` |/ _ \ \ / /
+ |  __/\ V / ___) | (_| |  __/\ V /
+  \___| \_/ |____/ \__,_|\___| \_/
+
+Debian stretch on LEGO MINDSTORMS EV3!
+Last login: Mon Feb  3 23:09:29 2020 from 192.168.10.110
+05:30 [734] ~$sudo apt-get update
+[sudo] password for robot: 
+Hit:1 http://security.debian.org stretch/updates InRelease                     
+Ign:2 http://httpredir.debian.org/debian stretch InRelease                     
+Hit:3 http://httpredir.debian.org/debian stretch Release                  
+Hit:4 http://archive.ev3dev.org/debian stretch InRelease                 
+Reading package lists... Done                      
+awk: cmd. line:1: fatal error: internal error: segfault
+Aborted
+05:35 [728] ~$sudo apt-get install --reinstall awk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package awk is a virtual package provided by:
+  original-awk 2012-12-20-6
+  mawk 1.3.3-17+b3
+  gawk 1:4.1.4+dfsg-1
+You should explicitly select one to install.
+
+E: Package 'awk' has no installation candidate
+05:36 [728] ~$sudo apt-get install --reinstall gawk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 184 not upgraded.
+Need to get 0 B/533 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+(Reading database ... 49440 files and directories currently installed.)
+Preparing to unpack .../gawk_1%3a4.1.4+dfsg-1_armel.deb ...
+Unpacking gawk (1:4.1.4+dfsg-1) over (1:4.1.4+dfsg-1) ...
+Setting up gawk (1:4.1.4+dfsg-1) ...
+05:39 [728] ~$sudo apt-get install strace
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  strace
+0 upgraded, 1 newly installed, 0 to remove and 184 not upgraded.
+Need to get 478 kB of archives.
+After this operation, 854 kB of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian stretch/main armel strace armel 4.15-2 [478 kB]
+Fetched 478 kB in 2s (189 kB/s) 
+Selecting previously unselected package strace.
+(Reading database ... 49440 files and directories currently installed.)
+Preparing to unpack .../strace_4.15-2_armel.deb ...
+Unpacking strace (4.15-2) ...
+Setting up strace (4.15-2) ...
+awk: cmd. line:1: (FILENAME=- FNR=1) fatal: field.c:111: erealloc called with zero bytes
+05:44 [724] ~$sudo apt-get install memtester
+eading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  memtester
+0 upgraded, 1 newly installed, 0 to remove and 184 not upgraded.
+Need to get 18.7 kB of archives.
+After this operation, 45.1 kB of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian stretch/main armel memtester armel 4.3.0-4+b1 [18.7 kB]
+Fetched 18.7 kB in 1s (12.5 kB/s)      
+Selecting previously unselected package memtester.
+(Reading database ... 49449 files and directories currently installed.)
+Preparing to unpack .../memtester_4.3.0-4+b1_armel.deb ...
+Unpacking memtester (4.3.0-4+b1) ...
+Setting up memtester (4.3.0-4+b1) ...
+05:49 [725] ~$memtester 1024 5
+-bash: memtester: command not found
+05:50 [723] ~$sudo memtester 1024 5
+memtester version 4.3.0 (32-bit)
+Copyright (C) 2001-2012 Charles Cazabon.
+Licensed under the GNU General Public License version 2 (only).
+
+pagesize is 4096
+pagesizemask is 0xfffff000
+want 1024MB (1073741824 bytes)
+got  121MB (127242240 bytes), trying mlock ...Killed
+awk: cmd. line:1: fatal error: internal error: segfault
+Aborted
+ter version 4.3.0 (32-bit)
+Copyright (C) 2001-2012 Charles Cazabon.
+Licensed under the GNU General Public License version 2 (only).
+
+pagesize is 4096
+pagesizemask is 0xfffff000
+want 30MB (31457280 bytes)
+got  30MB (31457280 bytes), trying mlock ...locked.
+Loop 1/2:
+  Stuck Address       : ok         
+  Random Value        : ok
+  Compare XOR         : ok
+  Compare SUB         : ok
+  Compare MUL         : ok
+  Compare DIV         : ok
+  Compare OR          : ok
+  Compare AND         : ok
+  Sequential Increment: ok
+  Solid Bits          : ok         
+  Block Sequential    : setting 200^C
+supoawk: cmd. line:1: (FILENAME=- FNR=1) warning: gensub: third argument 0 treated as 1
+awk: cmd. line:1: (FILENAME=- FNR=1) warning: gensub: third argument 0 treated as 1
+
+
+strace: bugs/strace-test-python-tk-segfaulting.stderr
+
+
+top dies with segfault:
+
+07:55 [822] ~$cat /proc/meminfo 
+MemTotal:          57180 kB
+MemFree:            6244 kB
+MemAvailable:      36932 kB
+Buffers:            4700 kB
+Cached:            27764 kB
+SwapCached:         1624 kB
+Active:            15376 kB
+Inactive:          20744 kB
+Active(anon):       2308 kB
+Inactive(anon):     1360 kB
+Active(file):      13068 kB
+Inactive(file):    19384 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:         98300 kB
+SwapFree:          89340 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:          3076 kB
+Mapped:            12332 kB
+Shmem:                12 kB
+Slab:               6172 kB
+SReclaimable:       1692 kB
+SUnreclaim:         4480 kB
+KernelStack:         552 kB
+PageTables:          680 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      126888 kB
+Committed_AS:     103200 kB
+VmallocTotal:     966656 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+
+
+07:56 [822] ~$top
+Segmentation fault
+
+
+Failing to apt-get:
+07:42 [835] ~$sudo apt-get install --reinstall libtk8.6  tk8.6-blt2.5
+[sudo] password for robot: 
+Reading package lists... Done
+Building dependency tree        
+Reading state information... Done
+0 upgraded, 0 newly installed, 2 reinstalled, 0 to remove and 184 not upgraded.
+Need to get 0 B/1,156 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+(Reading database ... 49459 files and directories currently installed.)
+Preparing to unpack .../libtk8.6_8.6.6-1+b1_armel.deb ...
+Unpacking libtk8.6:armel (8.6.6-1+b1) over (8.6.6-1+b1) ...
+Preparing to unpack .../tk8.6-blt2.5_2.5.3+dfsg-3_armel.deb ...
+Unpacking tk8.6-blt2.5 (2.5.3+dfsg-3) over (2.5.3+dfsg-3) ...
+Setting up libtk8.6:armel (8.6.6-1+b1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up tk8.6-blt2.5 (2.5.3+dfsg-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+awk: cmd. line:1: fatal error: internal error: segfault
+Aborted
+
+
+Memory was not full, I do not see much change in: (when apt-get was already stopped)
+07:44 [831] ~$cat /proc/meminfo 
+MemTotal:          57180 kB
+MemFree:            2008 kB
+MemAvailable:      36616 kB
+Buffers:            5740 kB
+Cached:            30644 kB
+SwapCached:         1780 kB
+Active:            18940 kB
+Inactive:          21460 kB
+Active(anon):       1676 kB
+Inactive(anon):     2364 kB
+Active(file):      17264 kB
+Inactive(file):    19096 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:         98300 kB
+SwapFree:          89340 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          3344 kB
+Mapped:            13928 kB
+Shmem:                24 kB
+Slab:               6208 kB
+SReclaimable:       1716 kB
+SUnreclaim:         4492 kB
+KernelStack:         552 kB
+PageTables:          680 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      126888 kB
+Committed_AS:     103200 kB
+VmallocTotal:     966656 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+
+08:07 [814] ~$sudo apt-get install --reinstall  procps
+Reading package lists... Done
+Building dependency tree        
+Reading state information... Done
+The following packages will be upgraded:
+  procps
+1 upgraded, 0 newly installed, 0 to remove and 183 not upgraded.
+Need to get 244 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian stretch/main armel procps armel 2:3.3.12-3+deb9u1 [244 kB]
+Fetched 244 kB in 1s (152 kB/s)        
+(Reading database ... 49459 files and directories currently installed.)
+Preparing to unpack .../procps_2%3a3.3.12-3+deb9u1_armel.deb ...
+Unpacking procps (2:3.3.12-3+deb9u1) over (2:3.3.12-3) ...
+Setting up procps (2:3.3.12-3+deb9u1) ...
+Processing triggers for systemd (232-25+deb9u2) ...
+topawk: cmd. line:1: fatal error: internal error: segfault
+Aborted
+08:09 [813] ~$top
+
+	signal 11 (SEGV) was caught by top, please
+	see http://www.debian.org/Bugs/Reporting
+Segmentation fault
+
+
+...it is not bad blocks:
+On main machine:
+/dev/mmcblk0p2   3785840   2493144   1105064  70% /media/bojar/EV3DEV_ROOTFS
+/dev/mmcblk0p1     49038      7322     41716  15% /media/bojar/EV3DEV_BOOT
+09:35 obonb ~$sudo umount /media/bojar/EV3DEV_ROOTFS
+[sudo] password for bojar: 
+09:35 obonb ~$sudo umount /media/bojar/EV3DEV_BOOT
+09:35 obonb ~$badblocks -n -v /dev/mmcblk0p1
+badblocks: Permission denied while trying to determine device size
+09:35 obonb ~$sudo badblocks -n -v /dev/mmcblk0p1
+Checking for bad blocks in non-destructive read-write mode
+From block 0 to 49151
+Testing with random pattern: Pass completed, 0 bad blocks found. (0/0/0 errors)
+09:36 obonb ~$sudo badblocks -n -v /dev/mmcblk0p2
+
