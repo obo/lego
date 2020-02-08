@@ -33,6 +33,7 @@ Brickman should go over Associating to Connecting to Connected
 
 ## Basic Commands
 
+```
 ssh robot@ev3dev.local
 # heslo maker
 python3
@@ -41,14 +42,25 @@ m = ev3.LargeMotor('outB')
 m.run_timed(time_sp=1000,speed_sp=500)
 
 
-# upgrading only ev3dev-python:
-sudo apt-get update
-sudo apt-get install --only-upgrade python3-ev3dev
+```
 
 ## Populating fresh robot card
 
+```
+# installing core packages I need
+sudo apt-get update
+sudo apt-get install gawk
+
+# upgrading only ev3dev-python:
+sudo apt-get update
+sudo apt-get install --only-upgrade python3-ev3dev
+```
+
+```
 git clone https://github.com/obo/lego.git
+# use our bashrc and vimrc:
 bash lego/environment/setup_environment.sh
+```
 
 ## Interesting Ideas from ev3dev Python Demos
 
@@ -1229,4 +1241,14 @@ Checking for bad blocks in non-destructive read-write mode
 From block 0 to 49151
 Testing with random pattern: Pass completed, 0 bad blocks found. (0/0/0 errors)
 09:36 obonb ~$sudo badblocks -n -v /dev/mmcblk0p2
+Checking for bad blocks in non-destructive read-write mode
+From block 0 to 3878911
+Testing with random pattern: Pass completed, 0 bad blocks found. (0/0/0 errors)
 
+
+...I filed an issue on this:
+https://github.com/ev3dev/ev3dev/issues/1374
+
+
+Other good links:
+http://www.legoengineering.com/ev3-gone-wrong/
