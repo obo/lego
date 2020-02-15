@@ -557,10 +557,12 @@ _T=20200204_08:27:18_13465	 ls
 _T=20200204_08:27:24_13465	 ls
 _T=20200204_08:27:26_13465	 mkdir bugs
 _T=20200204_09:41:21_13465	 git pull
+<<<<<<< Updated upstream
 _T=20200205_23:02:46_10577	 ls
 _T=20200205_23:02:49_10577	 cat loev3go.checkout
 _T=20200205_23:02:53_10577	 bask loev3go.checkout
 _T=20200205_23:02:59_10577	 bash loev3go.checkout
+<<<<<<< HEAD
 _T=20200215_21:17:02_19764	 ls
 _T=20200215_21:36:11_19764	 ls
 _T=20200215_21:36:15_19764	 git clone https://github.com/ev3dev/ev3dev-lang-python-demo.git
@@ -572,3 +574,30 @@ _T=20200215_21:42:09_19764	 dus
 _T=20200215_21:42:27_19764	 echo 'git clone https://github.com/ev3dev/ev3dev-lang-python.git' > ev3dev-lang-python.checkout
 _T=20200215_21:42:33_19764	 git add ev3dev-lang-python*out
 _T=20200215_21:42:39_19764	 git commit -a
+=======
+=======
+_T=20200204_09:41:29_13465	 git commit -a
+_T=20200204_09:41:35_13465	 git push
+_T=20200205_22:12:47_10198	 h dd
+_T=20200205_22:12:50_10198	 ls
+_T=20200205_22:13:07_10198	 vim README.md
+_T=20200205_22:27:33_18166	 ls
+_T=20200205_22:27:39_18166	 ls
+_T=20200205_22:57:33_18166	 git clone
+_T=20200205_22:57:37_18166	 git remote -v
+_T=20200206_19:34:49_12909	 ls
+_T=20200206_19:34:54_12909	 vim README.md
+_T=20200206_19:35:24_18166	 vim README.md
+_T=20200206_19:35:26_18166	 kill 19696
+_T=20200206_19:35:26_1883	 vim README.md
+_T=20200206_19:53:29_16999	 ls
+_T=20200206_19:53:42_16999	 cat README.md
+_T=20200206_19:53:46_16999	 vim README.md
+_T=20200206_20:52:23_18166	 vim README.md
+_T=20200206_21:10:56_17668	 vim environment/setup_environment.sh
+_T=20200206_21:13:47_17668	 vim .git/config
+_T=20200206_21:17:07_18166	 ssh robot@robot
+_T=20200208_22:33:11_20758	 vim ev3dev.github.io/docs/tutorials/getting-started-with-c.md
+_T=20200208_22:35:58_13920	 git pull
+>>>>>>> Stashed changes
+>>>>>>> f690616259203717ebc61c4bd01b2a4732866f33
