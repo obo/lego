@@ -15,7 +15,9 @@ else
 fi
 
 if [ -e $HOME/.bashrc ]; then
-  warn "~/.bashrc exists, not touching"
+  warn "~/.bashrc exists, adding final source"
+  echo "" >> $HOME/.bashrc
+  echo "source $MYDIR/bashrc" >> $HOME/.bashrc
 else
   ln -s $MYDIR/bashrc $HOME/.bashrc || die "Failed to symlink .bashrc"
 fi
