@@ -44,12 +44,27 @@ m.run_timed(time_sp=1000,speed_sp=500)
 
 ```
 
+## Creating a fresh robot card
+
+Download from EV3DEV:
+
+Find out the correct device (here ``/dev/mmcblk0``) e.g. by checking ``gnome-disks``.
+
+Flash it simply with ``dd``:
+```
+sudo dd if=ev3dev-stretch-ev3-generic-2020-04-10.img of=/dev/mmcblk0 bs=4M && sync
+```
+
 ## Populating fresh robot card
 
 ```
+# connect, e.g.
+ssh robot@192.168.0.105
+
 # installing core packages I need
 sudo apt-get update
 sudo apt-get install gawk
+sudo apt-get install python3-pip ## downloads 82 megs! Considering it for rpyc
 
 # upgrading only ev3dev-python:
 sudo apt-get update
@@ -60,6 +75,14 @@ sudo apt-get install --only-upgrade python3-ev3dev
 git clone https://github.com/obo/lego.git
 # use our bashrc and vimrc:
 bash lego/environment/setup_environment.sh
+```
+
+## numpy and scipy on EV3
+
+Highly recommended to use Debian pre-compiled packages, i.e.:
+
+```
+sudo apt install python3-numpy python3-scipy
 ```
 
 ## Interesting Ideas from ev3dev Python Demos
