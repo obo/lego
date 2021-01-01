@@ -557,12 +557,10 @@ _T=20200204_08:27:18_13465	 ls
 _T=20200204_08:27:24_13465	 ls
 _T=20200204_08:27:26_13465	 mkdir bugs
 _T=20200204_09:41:21_13465	 git pull
-<<<<<<< Updated upstream
 _T=20200205_23:02:46_10577	 ls
 _T=20200205_23:02:49_10577	 cat loev3go.checkout
 _T=20200205_23:02:53_10577	 bask loev3go.checkout
 _T=20200205_23:02:59_10577	 bash loev3go.checkout
-<<<<<<< HEAD
 _T=20200215_21:17:02_19764	 ls
 _T=20200215_21:36:11_19764	 ls
 _T=20200215_21:36:15_19764	 git clone https://github.com/ev3dev/ev3dev-lang-python-demo.git
@@ -574,8 +572,6 @@ _T=20200215_21:42:09_19764	 dus
 _T=20200215_21:42:27_19764	 echo 'git clone https://github.com/ev3dev/ev3dev-lang-python.git' > ev3dev-lang-python.checkout
 _T=20200215_21:42:33_19764	 git add ev3dev-lang-python*out
 _T=20200215_21:42:39_19764	 git commit -a
-=======
-=======
 _T=20200204_09:41:29_13465	 git commit -a
 _T=20200204_09:41:35_13465	 git push
 _T=20200205_22:12:47_10198	 h dd
@@ -599,5 +595,46 @@ _T=20200206_21:13:47_17668	 vim .git/config
 _T=20200206_21:17:07_18166	 ssh robot@robot
 _T=20200208_22:33:11_20758	 vim ev3dev.github.io/docs/tutorials/getting-started-with-c.md
 _T=20200208_22:35:58_13920	 git pull
+_T=20200208_22:36:31_13920	 git stash; git pull; git stash apply; git commit -am history; git push
+_T=20200209_18:40:11_1883	 vim README.md
+_T=20200209_18:40:11_1883	 vim README.md
+_T=20201229_15:42:47_19217	 ls
+_T=20201229_15:42:51_19217	 h
+_T=20201229_15:42:57_19217	 git pull
+_T=20201229_15:43:00_19217	 git diff
+_T=20201229_15:43:19_19217	 git diff
+_T=20201229_15:44:15_19217	 vim README.md
+_T=20201229_15:44:17_19217	 ls
+_T=20201229_15:45:30_19217	 host robot
+_T=20201229_15:48:20_19217	 find -type f | grep -i rpyc
+_T=20201229_15:48:27_19217	 find -type f | grep -i rpyc
+_T=20201229_16:07:07_20906	 find -type f | grep dd
+_T=20201229_16:07:12_20906	 find -type f | grep 'dd '
+_T=20201229_16:07:16_20906	 h dd
+_T=20201229_16:08:28_20906	 ls
+_T=20201229_21:16:28_19217	 h dd
+_T=20201229_21:24:59_19217	 sudo dd if= /home/bojar/Downloads/ev3dev-stretch-ev3-generic-2020-04-10/ev3dev-stretch-ev3-generic-2020-04-10.img of=/dev/mmcblk0 bs=4M && sync
+_T=20201229_21:28:22_19217	 sudo dd if=/home/bojar/Downloads/ev3dev-stretch-ev3-generic-2020-04-10/ev3dev-stretch-ev3-generic-2020-04-10.img of=/dev/mmcblk0 bs=4M && sync
+_T=20201229_22:12:30_20883	 h
+_T=20201229_22:12:35_20883	 sudo apt-get install python3-rpyc
+_T=20201229_22:12:44_20883	 puthon3
+_T=20201229_22:13:04_20883	 python3
+_T=20201229_22:13:10_20883	 sudo apt-get install python37-rpyc
+_T=20201229_22:13:13_20883	 sudo apt-get install python3.7-rpyc
+_T=20201229_22:13:19_20883	 sudo apt-get install python3.6-rpyc
+_T=20201229_22:13:34_20883	 python3.7
+_T=20201229_22:13:42_20883	 python3.7
+_T=20201229_22:13:46_20883	 ls
+_T=20201229_22:14:43_20883	 ls
+_T=20210101_14:25:51_11226	 h
+_T=20210101_14:25:52_11226	 ls
+_T=20210101_14:26:42_20824	 h
+_T=20210101_14:28:02_20824	 ls
+_T=20210101_14:28:09_20824	 ls
+_T=20210101_14:28:34_20883	 ls
+_T=20210101_14:28:36_20883	 h ssh
+_T=20210101_14:41:04_20709	 git pull
 >>>>>>> Stashed changes
->>>>>>> f690616259203717ebc61c4bd01b2a4732866f33
+_T=20210101_14:41:17_20709	 git stash; git pull; git stash apply
+_T=20210101_14:41:54_20709	 vim .history-bojar-nb
+_T=20210101_14:42:13_20709	 git commit -am history .history-bojar-nb ; git push; git pull
