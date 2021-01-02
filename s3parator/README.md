@@ -35,6 +35,27 @@
 - Predict object, decide on target direction
 - Use the movable frame to shovel the object there
 
+# Installation
+
+Python again proved its flawed installation layout. I am absolutely struggling with getting a single version of python running which would have things like opencv, rpyc etc.
+
+I damaged my python3 by custom-installing python 3.5.3 instead of the default 3.5.2. I reinstalled the default python3 with apt-get, further damaging things which relied on python3...
+
+The only sensible way seems now:
+
+```
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 10
+  # switch plain python to 3.7
+pyvenv venv
+source venv/bin/activate
+# OR RATHER
+virtualenv -p python3.7 venv379
+source venv379/bin/activate
+
+pip install -r requirements.txt
+  # opencv will take ages
+```
+
 # Random Ideas on Lego Brick Recognition
 
 ## Links

@@ -1,0 +1,6 @@
+readline
+numpy
+sklearn
+scikit-build
+opencv-python
+requests
