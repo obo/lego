@@ -78,8 +78,7 @@ class Writer():
         self.mot_A    = mymotor(OUTPUT_D)
         self.mot_B    = mymotor(OUTPUT_A)
 
-        # self.touch_A  = TouchSensor(INPUT_3)
-        # self.touch_B  = TouchSensor(INPUT_2)
+        self.touch  = TouchSensor(INPUT_4)
 
         if (reset):
             # reset assumes that it's centered
@@ -88,55 +87,29 @@ class Writer():
         if (calibrate):
             self.calibrate()
 
-    def pen_up (self, wait=1):
-        self.mot_lift.goto_position(40, 30, regulate = 'off', stop_command='brake', wait = wait)
-        if wait:
-            time.sleep(0.1)
-
-    def pen_down(self, wait=1):
-        self.mot_lift.goto_position(0, 30, regulate = 'off', stop_command='brake', wait = wait)
-        if wait:
-            time.sleep(0.1)
-
     def calibrate (self):
-        self.mot_lift.rotate_forever(speed=-50, regulate='off')
-        time.sleep(0.5)
-        while(abs(self.mot_lift.speed) > 5):
-            time.sleep(0.001)
-        self.mot_lift.stop()
-        time.sleep(0.1)
-        self.mot_lift.reset_position()
-        time.sleep(0.1)
-        self.mot_lift.goto_position(40, speed=400, regulate='on', stop_command='brake', wait=1)
-        time.sleep(0.1)
-        self.mot_lift.reset_position()
-        time.sleep(1)
-
-        self.pen_up()
-
+        self.mot_A.stop()
+        self.mot_B.stop()
         self.mot_A.reset_position()
         self.mot_B.reset_position()
+        # the idea of calibration is to leave motor A freely rotating and pull
+        # B to the right until it touches.
+        # UNFORTUNATELY, the idea won't work, the 'free' rotation of the motor
+        # is extremely stiff; both motors need to be run explicitly.
 
-        if (self.touch_A.value()):
-            self.mot_A.goto_position(-200, speed=400, regulate='on', stop_command='coast', wait=1)
-        if (self.touch_B.value()):
+        # should not touch at the beginning
+        if (self.touch.value()):
             self.mot_B.goto_position(200, speed=400, regulate='on', stop_command='coast', wait=1)
         self.mot_B.rotate_forever(speed=-25, regulate='off')
-        self.mot_A.rotate_forever(speed=25, regulate='off')
-        stop_A = stop_B = False
+        stop_B = False
         start = time.time()
         while True:
-            touch_A, touch_B = self.touch_A.value(), self.touch_B.value()
-            if (not stop_A and touch_A):
-                pos = self.mot_A.position
-                self.mot_A.stop()
-                self.mot_A.goto_position(pos, speed=-400, regulate='on', stop_command='hold')
-                stop_A = True
-            if (not stop_B and touch_B):
+            touch = self.touch.value()
+            if (not stop and touch):
                 pos = self.mot_B.position
                 self.mot_B.goto_position(pos, speed=400, regulate='on', stop_command='hold')
-                stop_B = True
-            if (stop_B and stop_A):
+                stop = True
+            if (stop):
                 break
             if (time.time() - start > 10):
                 self.mot_A.stop()
@@ -144,7 +117,9 @@ class Writer():
                 break
             time.sleep(0.05)
         time.sleep(1)
-        self.mot_A.reset_position()
+        eprint("A pos: ", self.mot_A.position())
+        eprint("B pos: ", self.mot_B.position())
+        # self.mot_A.reset_position()
         self.mot_B.reset_position()
         self.mot_A.goto_position(-200, speed=400, regulate='on', stop_command='hold', wait=0)
         self.mot_B.goto_position(200, speed=400, regulate='on', stop_command='hold', wait=1)

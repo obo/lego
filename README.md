@@ -907,7 +907,7 @@ https://superuser.com/questions/437137/how-to-turn-my-linux-netbook-into-wifi-ap
 
 ## Tips for power supply
 
-http://www.mindstormsrobots.com/lego-mindstorms/mindstorms-robots/mindstorms-ev3-robots/
+https://www.philohome.com/nxtsupply/nxtsupply.htm
 ...napajeni ze site
 
 https://zbozi.mobilmania.cz/ostatni-baterie-a-prislusenstvi/napajeci-adapter-230v-3-12v-600ma/
