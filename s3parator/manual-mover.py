@@ -74,13 +74,17 @@ class mymotor(Motor):
 
 class Writer():
 
-    def __init__(self, calibrate=True):
+    def __init__(self, reset=True, calibrate=True):
         self.mot_A    = mymotor(OUTPUT_D)
         self.mot_B    = mymotor(OUTPUT_A)
 
         # self.touch_A  = TouchSensor(INPUT_3)
         # self.touch_B  = TouchSensor(INPUT_2)
 
+        if (reset):
+            # reset assumes that it's centered
+            self.mot_A.reset_position()
+            self.mot_B.reset_position()
         if (calibrate):
             self.calibrate()
 
