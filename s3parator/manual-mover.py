@@ -7,6 +7,11 @@ from ev3dev.ev3 import *
 
 import evdev
 
+# python print to stderr (most portable and flexible)
+import sys
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
 # for key-based mover:
 #from getkey import getkey, keys
 import myreadchar
@@ -70,7 +75,7 @@ class mymotor(Motor):
 class Writer():
 
     def __init__(self, calibrate=True):
-        self.mot_A    = mymotor(OUTPUT_C)
+        self.mot_A    = mymotor(OUTPUT_D)
         self.mot_B    = mymotor(OUTPUT_A)
 
         # self.touch_A  = TouchSensor(INPUT_3)
@@ -471,6 +476,7 @@ class Writer():
     def follow_keys (self):
         posB, posA = self.mot_B.position, self.mot_A.position
         ciblex, cibley = Writer.motorpos_to_coordinates (posB, posA)
+        eprint("Hit an arrow, 'q' to exit.")
         while True:
             # key = getkey()  # then use keys.UP etc.
             key = myreadchar.readkey()
@@ -482,6 +488,11 @@ class Writer():
                 ciblex -= 1
             elif key == myreadchar.RIGHT:
                 ciblex += 1
+            elif key == 'q' or key == myreadchar.ESC:
+                self.mot_A.stop(stop_command='hold')
+                self.mot_B.stop(stop_command='hold')
+                exit(0)
+            eprint("Going to ", ciblex, ", ", cibley)
             if (not self.set_speed_to_coordinates (ciblex,cibley,brake=1.0,max_speed = 100)):
                 self.mot_A.stop(stop_command='hold')
                 self.mot_B.stop(stop_command='hold')
