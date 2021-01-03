@@ -4,29 +4,29 @@
 
 # Current Best Proposed Design
 
-## Hardware
+## Considered Hardware
 
-- Motor 1:
+- Motor 1: (now not planning)
   - one belt to load stage
   - one belt to return failed bricks
 - Motor 2 & 3:
   - Follow https://www.ev3dev.org/projects/2015/05/06/EV3-Print3rbot/
-    to build a moving box around the current element.
+    to build a moving frame around the current element.
   - Still problematic because of the missing touch sensor.
     - Would need to calibrate via vision
   - Another problem could be the small range of movements (and the need to push the moving box very far)
     - So perhaps a better solution would be to simply *sink* the platform, dropping the brick into one of 8 directions
       - Sinking has the further advantage of an easy 'tare' of the scale
 - cell phone with 2 cams
-- Digital scale
+- possibly a digital scale
 
 ## Software
 
 - RPyC ev3dev to operate the motors
 - IP Webcam to scan the scene in video and then take pictures
-- TF to recognize bricks and weight digits
+- TF to recognize bricks (and weight digits if we use the scale)
 
-## Operation
+## Intended Operation
 
 - Cell phone watches the belt with peripheral vision
 - Slow down if any object apparent
