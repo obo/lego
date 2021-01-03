@@ -7,6 +7,9 @@ from ev3dev.ev3 import *
 
 import evdev
 
+# for key-based mover:
+from getkey import getkey, keys
+
 class mymotor(Motor):
     def stop(self, stop_command='coast'):
         self.stop_action = stop_command
