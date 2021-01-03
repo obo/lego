@@ -464,10 +464,29 @@ class Writer():
                 self.mot_B.stop(stop_command='hold')
             time.sleep(0.1)
 
+    def follow_keys (self):
+        posB, posA = self.mot_B.position, self.mot_A.position
+        ciblex, cibley = Writer.motorpos_to_coordinates (posB, posA)
+        while True:
+            key = getkey()
+            if key == keys.UP:
+                cibley += 1
+            elif key == keys.DOWN:
+                cibley -= 1
+            elif key == keys.LEFT:
+                ciblex -= 1
+            elif key == keys.RIGHT:
+                ciblex += 1
+            if (not self.set_speed_to_coordinates (ciblex,cibley,brake=1.0,max_speed = 100)):
+                self.mot_A.stop(stop_command='hold')
+                self.mot_B.stop(stop_command='hold')
+            # time.sleep(0.1) # getkey is blocking, so no need to throttle
+
 def main():
     wri = Writer(calibrate = False)
     # wri.draw_image(image_file = 'images/test.svg',max_speed=35)
-    wri.follow_mouse()
+    # wri.follow_mouse()
+    wri.follow_keys()
 
 
 
