@@ -8,7 +8,8 @@ from ev3dev.ev3 import *
 import evdev
 
 # for key-based mover:
-from getkey import getkey, keys
+#from getkey import getkey, keys
+import myreadchar
 
 class mymotor(Motor):
     def stop(self, stop_command='coast'):
@@ -471,14 +472,15 @@ class Writer():
         posB, posA = self.mot_B.position, self.mot_A.position
         ciblex, cibley = Writer.motorpos_to_coordinates (posB, posA)
         while True:
-            key = getkey()
-            if key == keys.UP:
+            # key = getkey()  # then use keys.UP etc.
+            key = myreadchar.readkey()
+            if key == myreadchar.UP:
                 cibley += 1
-            elif key == keys.DOWN:
+            elif key == myreadchar.DOWN:
                 cibley -= 1
-            elif key == keys.LEFT:
+            elif key == myreadchar.LEFT:
                 ciblex -= 1
-            elif key == keys.RIGHT:
+            elif key == myreadchar.RIGHT:
                 ciblex += 1
             if (not self.set_speed_to_coordinates (ciblex,cibley,brake=1.0,max_speed = 100)):
                 self.mot_A.stop(stop_command='hold')
