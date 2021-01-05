@@ -28,10 +28,9 @@
 
 ## Intended Operation
 
-- Cell phone watches the belt with peripheral vision
-- Slow down if any object apparent
-- Drop object on scale, into the movable frame
-- Take 2 pictures and read scale
+- Drop a brick into the moving frame and touch a button.
+- EV3 will move the brick to scanning area
+- Take 2 pictures
 - Predict object, decide on target direction
 - Use the movable frame to shovel the object there
 
