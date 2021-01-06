@@ -55,6 +55,25 @@ pip install -r requirements.txt
   # opencv will take ages
 ```
 
+# Testing without EV3
+
+An easy option to test your python code without EV3 is to use FakEV3dev, an API identical to ev3 module but with dummy operations.
+
+To do so, simply put FakEV3dev into PYTHONPATH before regular modules. From this directory use:
+
+```
+export PYTHONPATH=$(pwd)/../fake3dev/:$PYTHONPATH
+```
+
+# Random Ideas on Lego Brick Recognition
+
+## Links
+
+https://www.instructables.com/id/Lego-Brick-Sorter/
+...hardware pre-sorting
+
+Large-scale sorters:
+
 # Random Ideas on Lego Brick Recognition
 
 ## Links
@@ -78,11 +97,17 @@ https://www.eurobricks.com/forum/index.php?/forums/topic/83069-sort3r-my-first-e
 http://ev3lessons.com/RobotDesigns/instructions/droidbot2instructions.pdf
 ...droid bot compact, better than tank
 
+https://robo4you.at/publications/Lego.pdf
+...2018 master thesis by Christine Zeh and Simon Babovic
+
 ## Catalogue of Parts and Sets
 
 https://www.bricklink.com/catalogTree.asp?itemType=S
 
 https://www.bricklink.com/catalogItemInv.asp?S=60198-1
+
+https://www.kaggle.com/joosthazelzet/lego-brick-images
+...dataset of 50 brick types rendered in angles
 
 ## Scales
 
@@ -93,6 +118,9 @@ https://www.amazon.com/Milligram-NEWACALOX-Rechargeable-Precision-Calibration/dp
 
 https://www.mikrovahy.cz/mikrovahy-do-50g/123-kl-158-presna-digitalni-mikrovahy-do-50g-0-001g.html
 650 CZK
+
+https://www.profivahy.cz/profi-vahy/eshop/28-1-Vahy-podle-provozu/0/5/2027-LESAK-P058-500g-0-01g-miska-50x55mm?gclid=EAIaIQobChMIx_DFupyI7gIVhNCyCh2cXQjIEAQYAiABEgK33PD_BwE
+300 CZK  but not sure if the precision is indeed 0.01g
 
 ## Motor-constrained design:
 

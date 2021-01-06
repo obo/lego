@@ -5,7 +5,7 @@
 import math, os, time
 from ev3dev.ev3 import *
 
-import evdev
+# import evdev
 
 # python print to stderr (most portable and flexible)
 import sys
@@ -81,10 +81,22 @@ class Writer():
         self.touch  = TouchSensor(INPUT_4)
 
         if (reset):
-            # reset assumes that it's centered
+            # reset assumes that our arms are stretched out, forming one line:
+            #
+            #    ....--------^--------....
+            #   *-.                     .-*
+            #      `------A|   |B------'
+            # 
+            # From this stretched position, we 200 forward:
+            self.mot_A.reset_position()
+            self.mot_B.reset_position()
+            self.mot_A.goto_position(-200, speed=400, regulate='on', stop_command='hold', wait=0)
+            self.mot_B.goto_position(200, speed=400, regulate='on', stop_command='hold', wait=1)
+            # ...and call that the new zero of motors
             self.mot_A.reset_position()
             self.mot_B.reset_position()
         if (calibrate):
+            # calibrate does not work
             self.calibrate()
 
     def calibrate (self):
@@ -150,6 +162,12 @@ class Writer():
     #   -------
     #   [robot]
     #   -------
+    # Ondrej's guess of polarity based on original calibration code:
+    # for motor A, positive motor direction is counterclockwise arm movement
+    # for motor B, positive motor direction is also counterclockwise arm movement
+    # Init state is with both arms moderately closed (200 away from the
+    # perpendicular/touch state; -200 for A, +200 for B),
+    # i.e. going +200 with A would hit the sensor.
 
     ## Computes the intersection of 2 circles of centres x0,y0 and x1,y1 and radius resp. R0 and R1.
     @staticmethod
@@ -194,6 +212,7 @@ class Writer():
             #-2970 = 90
             return ((angle-14.) * 2970. / (90.-14.))
         (alpha, beta) = Writer.coordinates_to_angles (x, y)
+        eprint("coords ", (x, y), " mean angles ", (alpha, beta))
         return angle_to_pos (alpha), -angle_to_pos (beta)
 
     ## Converts angles of arms to coordinates.
@@ -235,6 +254,7 @@ class Writer():
         posB, posA = self.mot_B.position, self.mot_A.position
         myx, myy = Writer.motorpos_to_coordinates (posB, posA)
         dist = math.sqrt((myx-x)*(myx-x) + (myy-y)*(myy-y))
+        eprint("Speeding towards ", (x,y), " which is ", dist, "away.")
         if (initx or inity):
             too_far = (180-Writer.get_angle(initx, inity, x, y, myx, myy) >= 90)
         else:
@@ -455,26 +475,39 @@ class Writer():
     def follow_keys (self):
         posB, posA = self.mot_B.position, self.mot_A.position
         ciblex, cibley = Writer.motorpos_to_coordinates (posB, posA)
+        eprint("Motors are at ", (posA, posB), " which means coords ",
+          (ciblex, cibley))
+        absx, absy = ciblex, cibley
+        tgtx, tgty = 0, 0
         eprint("Hit an arrow, 'q' to exit.")
         while True:
+            posB, posA = self.mot_B.position, self.mot_A.position
+            ciblex, cibley = Writer.motorpos_to_coordinates (posB, posA)
+            eprint("Motors are at ", (posA, posB), " which means coords ",
+              (ciblex, cibley))
             # key = getkey()  # then use keys.UP etc.
             key = myreadchar.readkey()
             if key == myreadchar.UP:
-                cibley += 1
+                tgty += 1
             elif key == myreadchar.DOWN:
-                cibley -= 1
+                tgty -= 1
             elif key == myreadchar.LEFT:
-                ciblex -= 1
+                tgtx -= 1
             elif key == myreadchar.RIGHT:
-                ciblex += 1
+                tgtx += 1
             elif key == 'q' or key == myreadchar.ESC:
                 self.mot_A.stop(stop_command='hold')
                 self.mot_B.stop(stop_command='hold')
                 exit(0)
-            eprint("Going to ", ciblex, ", ", cibley)
-            if (not self.set_speed_to_coordinates (ciblex,cibley,brake=1.0,max_speed = 100)):
+            eprint("Current target ", (tgtx, tgty), " wrt to abs start ",
+              (absx, absy))
+            if (not self.set_speed_to_coordinates (absx+tgtx,absy+tgty,brake=1.0,max_speed = 100)):
+                # we have arrived at tgt
+                absx+=tgtx
+                absy+=tgty
                 self.mot_A.stop(stop_command='hold')
                 self.mot_B.stop(stop_command='hold')
+                tgtx, tgty = 0, 0 # we have arrived there
             # time.sleep(0.1) # getkey is blocking, so no need to throttle
 
 def main():
